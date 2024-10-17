@@ -48,7 +48,7 @@ async def create_user(
     new_user = UserDB(
         nome=user.nome,
         email=user.email,
-        senha=user.senha
+        senha=hash_password(user.senha)
     )
     session.add(new_user)
     try:

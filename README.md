@@ -108,6 +108,14 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
 ## 📸 Screenshots dos Endpoints Testados
 ![Exemplo de Uso do Endpoint Consultar Clima](./screenshots/consulta_clima.png)
 
+*Descrição da screenshot: Mostrando a resposta do endpoint `/registrar/`.*
+
+![Exemplo de Uso do Endpoint Registrar Usuario](./screenshots/registrar_usuario.png)
+
+*Descrição da screenshot: Mostrando a resposta do endpoint `/login/`.*
+
+![Exemplo de Uso do Endpoint Login Usuario](./screenshots/login_usuario.png)
+
 *Descrição da screenshot: Mostrando a resposta do endpoint `/consultar/` com a previsão do tempo.*
 
 ## 🎥 Vídeo de Execução da Aplicação
