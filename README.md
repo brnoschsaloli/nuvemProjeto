@@ -35,8 +35,9 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
       POSTGRES_PASSWORD="senha do postgres"
       POSTGRES_DB="nome do banco de dados"
       DATABASE_URL = "url do postgres"
-      API_KEY = "key para api do OpenWeatherMap" #(Você deve criar uma conta no site da OpenWeatherMap e resgatar sua APIKEY gratuitamente)
+      API_KEY = "key para api do OpenWeatherMap"
      ```
+    - Você deve criar uma conta no site da OpenWeatherMap e resgatar sua APIKEY gratuitamente
 
 3. **Iniciar os Contêineres com Docker Compose:**
    ```bash
@@ -55,8 +56,9 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
   - **Body:**
     ```json
     {
-      "username": "seu_usuario",
-      "password": "sua_senha"
+      "nome": "seu nome",
+      "email": "seu email",
+      "senha": "sua senha"
     }
     ```
   - **Descrição:** Registra um novo usuário e retorna um token JWT.
@@ -67,8 +69,8 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
   - **Body:**
     ```json
     {
-      "username": "seu_usuario",
-      "password": "sua_senha"
+      "email": "seu email",
+      "senha": "sua senha"
     }
     ```
   - **Descrição:** Autentica um usuário e retorna um token JWT.
