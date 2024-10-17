@@ -35,7 +35,7 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
       POSTGRES_PASSWORD="senha do postgres"
       POSTGRES_DB="nome do banco de dados"
       DATABASE_URL = "url do postgres"
-      API_KEY = "key para api do OpenWeatherMap" (Você deve criar uma conta no site da OpenWeatherMap e resgatar sua APIKEY gratuitamente)
+      API_KEY = "key para api do OpenWeatherMap" #(Você deve criar uma conta no site da OpenWeatherMap e resgatar sua APIKEY gratuitamente)
      ```
 
 3. **Iniciar os Contêineres com Docker Compose:**
