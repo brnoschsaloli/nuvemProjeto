@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def get_weather_data():
-    api_key = "127584e87c347080f9081e49dde5cafe"
+    api_key = os.getenv("API_KEY")
 
     if not api_key:
         print("Chave de API não encontrada. Verifique se ela está definida nas variáveis de ambiente.")

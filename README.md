@@ -1,15 +1,13 @@
-Claro! Abaixo está um exemplo de **README.md** que atende aos requisitos que você mencionou. Você pode personalizar os **placeholders** com as informações específicas do seu projeto.
-
-# 📚 Nome do Projeto
+# 📚 Cloud
 
 ## 👨‍🎓 Nome do Aluno
-**Seu Nome Aqui**
+**Breno Schneider Salles de Oliveira**
 
 ## 📝 Descrição do Projeto
-Este projeto é uma **aplicação de web scraping** desenvolvida para **[explique brevemente o objetivo do projeto]**. Utilizando tecnologias como **[listar tecnologias principais, por exemplo, Python, BeautifulSoup, FastAPI, Docker, etc.]**, a aplicação extrai dados de **[mencionar o site ou a fonte dos dados]** e disponibiliza uma **API** para **[descrever o que a API faz, por exemplo, consultar informações meteorológicas, dados de produtos, etc.]**.
+Este projeto é uma **API dockerizada** integrada com um banco de dados **PostgreSQL**, desenvolvida para **gerenciar usuários** com funcionalidades de registro, login e autenticação utilizando **JWT**. Utilizando tecnologias como **Python, FastAPI, Docker e SQLAlchemy**, a aplicação realiza **web scraping** no serviço **OpenWeatherMap** para obter a previsão do clima da cidade de **São Paulo** nos próximos **5 dias**. A API permite que os usuários autenticados consultem informações detalhadas como temperatura prevista, condições climáticas, umidade e velocidade do vento. A integração com o banco de dados assegura o armazenamento seguro das credenciais dos usuários e a gestão eficiente das sessões autenticadas, proporcionando uma experiência segura e confiável para acessar dados meteorológicos atualizados.
 
 ### **Funcionalidades Implementadas:**
-- **Scraping de Dados:** Coleta de informações específicas de **[site/fonte]**.
+- **Scraping de Dados:** Coleta de informações específicas de **[OpenWeatherMap]**.
 - **API RESTful:** Fornece endpoints para acessar os dados coletados.
 - **Autenticação JWT:** Segurança para proteger os endpoints da API.
 - **Containerização com Docker:** Facilita a implantação e execução da aplicação em qualquer ambiente.
@@ -24,16 +22,20 @@ Este projeto é uma **aplicação de web scraping** desenvolvida para **[expliqu
 
 1. **Clone o Repositório:**
    ```bash
-   git clone https://github.com/seu_usuario/seu_repositorio.git
-   cd seu_repositorio
+   git clone https://github.com/brnoschsaloli/nuvemProjeto.git
+   cd nuvemProjeto
    ```
 
 2. **Configurar Variáveis de Ambiente:**
    - Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
      ```env
-     OPENWEATHER_API_KEY=your_openweather_api_key
-     DATABASE_URL=postgresql://usuario:senha@db:5432/seu_banco
-     JWT_SECRET_KEY=your_jwt_secret_key
+    SECRET_KEY="key secreta para o jwt"
+    ALGORITHM="algoritimo para hash de senhas do banco de dados"
+    POSTGRES_USER="user do postgres"
+    POSTGRES_PASSWORD="senha do postgres"
+    POSTGRES_DB="nome do banco de dados"
+    DATABASE_URL = "url do postgres"
+    API_KEY = "key para api do OpenWeatherMap" (Você deve criar uma conta no site da OpenWeatherMap e resgatar sua APIKEY gratuitamente)
      ```
 
 3. **Iniciar os Contêineres com Docker Compose:**
@@ -100,14 +102,6 @@ Este projeto é uma **aplicação de web scraping** desenvolvida para **[expliqu
       ]
     }
     ```
-
-### **Outro Endpoint (se aplicável)**
-- **[Nome do Endpoint]**
-  - **URL:** `/endpoint/`
-  - **Método:** `[GET/POST/etc.]`
-  - **Descrição:** `[Descrição do que o endpoint faz.]`
-  - **Parâmetros:** `[Detalhes dos parâmetros, se houver.]`
-  - **Resposta:** `[Exemplo de resposta.]`
 
 ## 📸 Screenshots dos Endpoints Testados
 ![Exemplo de Uso do Endpoint Consultar Clima](./screenshots/consulta_clima.png)
