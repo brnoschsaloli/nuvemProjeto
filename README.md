@@ -29,13 +29,13 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
 2. **Configurar Variáveis de Ambiente:**
    - Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
      ```env
-    SECRET_KEY="key secreta para o jwt"
-    ALGORITHM="algoritimo para hash de senhas do banco de dados"
-    POSTGRES_USER="user do postgres"
-    POSTGRES_PASSWORD="senha do postgres"
-    POSTGRES_DB="nome do banco de dados"
-    DATABASE_URL = "url do postgres"
-    API_KEY = "key para api do OpenWeatherMap" (Você deve criar uma conta no site da OpenWeatherMap e resgatar sua APIKEY gratuitamente)
+      SECRET_KEY="key secreta para o jwt"
+      ALGORITHM="algoritimo para hash de senhas do banco de dados"
+      POSTGRES_USER="user do postgres"
+      POSTGRES_PASSWORD="senha do postgres"
+      POSTGRES_DB="nome do banco de dados"
+      DATABASE_URL = "url do postgres"
+      API_KEY = "key para api do OpenWeatherMap" (Você deve criar uma conta no site da OpenWeatherMap e resgatar sua APIKEY gratuitamente)
      ```
 
 3. **Iniciar os Contêineres com Docker Compose:**
