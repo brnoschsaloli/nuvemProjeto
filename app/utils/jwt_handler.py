@@ -3,10 +3,12 @@ from typing import Any
 import jwt
 from dotenv import load_dotenv
 from fastapi import Depends, HTTPException
-from fastapi.security import OAuth2PasswordBearer
+from fastapi.security import  HTTPAuthorizationCredentials, HTTPBearer
 
 
 load_dotenv()
+
+SECURITY = HTTPBearer()
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = os.getenv("ALGORITHM")
@@ -29,10 +31,12 @@ def decode_access_token(token: str) -> Any:
     except jwt.PyJWTError:
         return None
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login/")
 
-async def get_current_user(token: str = Depends(oauth2_scheme)):
-    payload = decode_access_token(token)
+async def get_current_user(token: HTTPAuthorizationCredentials = Depends(SECURITY)):
+
+    jwt_token = token.credentials
+
+    payload = decode_access_token(jwt_token)
     if payload is None:
         raise HTTPException(status_code=401, detail="Token inválido")
     user_email = payload.get("sub")

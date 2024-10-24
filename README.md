@@ -45,7 +45,7 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
    ```
 
 4. **Acessar a Aplicação:**
-   - A API estará disponível em `http://localhost:8000`.
+   - A API estará disponível em `http://localhost:8000/docs`.
 
 ## 📚 Documentação dos Endpoints da API
 
@@ -124,7 +124,7 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
 *Descrição: Vídeo demonstrando a execução da aplicação e a interação com os endpoints da API.*
 
 ## 📦 Link para o Docker Hub do Projeto
-[![Docker Hub](https://img.shields.io/badge/Docker_Hub-Repository-blue)](https://hub.docker.com/r/seu_usuario/seu_repositorio)
+[![Docker Hub](https://img.shields.io/badge/Docker_Hub-Repository-blue)](https://hub.docker.com/r/brnoschsaloli/nuvemprojeto)
 
 *Descrição: Link para a imagem Docker do projeto no Docker Hub.*
 
