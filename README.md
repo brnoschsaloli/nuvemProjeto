@@ -22,27 +22,19 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
 
 #### **Opção 1:**
 
-1. **Baixe o arquivo docker-compose.yaml:** 
+1. **Baixe o arquivo docker-compose.yaml e armazene-o em um diretório vazio:** 
 
     <div style="margin-top:15px;"></div>
 
     - [docker-compose.yaml](https://raw.githubusercontent.com/brnoschsaloli/nuvemprojeto/main/compose-dockerhub/docker-compose.yaml)
 
-    <div style="margin-top:15px;"></div>
+<div style="margin-top:15px;"></div>
 
-    - **Observação:** Clique com o botão direito no link e selecione "Salvar link como..." para baixar o arquivo.
-
-    <div style="margin-top:15px;"></div>
-
-2. **Certifique-se de que o Docker está rodando no seu computador**
+2. **Abra o terminal na pasta que o arquivo foi baixado**
 
 <div style="margin-top:15px;"></div>
 
-3. **Abra o terminal na pasta que o arquivo foi baixado**
-
-<div style="margin-top:15px;"></div>
-
-4. **Iniciar os Contêineres com Docker Compose:**
+3. **Iniciar os Contêineres com Docker Compose:**
 
     <div style="margin-top:15px;"></div>
 
@@ -52,7 +44,7 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
 
 <div style="margin-top:15px;"></div>
 
-5. **Acessar a Aplicação:**
+4. **Acessar a Aplicação:**
 
     <div style="margin-top:15px;"></div>
 
