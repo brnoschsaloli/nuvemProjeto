@@ -20,11 +20,13 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
 
 ### **Passo a Passo**
 
+#### **Opção 1:**
+
 1. **Baixe o arquivo docker-compose.yaml:** 
 
     <div style="margin-top:15px;"></div>
 
-    - [docker-compose.yaml](compose/docker-compose.yaml)
+    - [docker-compose.yaml](compose-dockerhub/docker-compose.yaml)
 
     <div style="margin-top:15px;"></div>
 
@@ -34,15 +36,53 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
 
 3. **Iniciar os Contêineres com Docker Compose:**
 
-<div style="margin-top:15px;"></div>
+    <div style="margin-top:15px;"></div>
 
-   ```bash
-   docker compose up -d
-   ```
+    ```bash
+    docker compose up -d
+    ```
 
 <div style="margin-top:15px;"></div>
 
 4. **Acessar a Aplicação:**
+
+    <div style="margin-top:15px;"></div>
+
+    - A API estará disponível em [http://localhost:8000/docs](http://localhost:8000/docs).
+
+
+#### **Opção 2:**
+
+1. **Clone o repositorio:** 
+
+    <div style="margin-top:15px;"></div>
+
+    ```bash
+    git clone https://github.com/brnoschsaloli/nuvemProjeto.git
+    cd nuvemProjeto
+   ```
+2. **Entre na pasta onde o arquivo docker-compose.yaml:** 
+
+    <div style="margin-top:15px;"></div>
+
+    ```bash
+    cd compose-dockerhub
+   ```
+3. **Certifique-se de que o Docker está rodando no seu computador**
+
+<div style="margin-top:15px;"></div>
+
+4. **Iniciar os Contêineres com Docker Compose:**
+
+    <div style="margin-top:15px;"></div>
+
+    ```bash
+    docker compose up -d
+    ```
+
+<div style="margin-top:15px;"></div>
+
+5. **Acessar a Aplicação:**
 
     <div style="margin-top:15px;"></div>
 
