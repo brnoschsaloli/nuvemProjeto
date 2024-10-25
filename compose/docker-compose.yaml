@@ -1,0 +1,24 @@
+services:
+  db:
+    image: postgres:13
+    restart: always
+    environment:
+            POSTGRES_DB: ${POSTGRES_DB:-projeto} 
+            POSTGRES_USER: ${POSTGRES_USER:-projeto}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-projeto}
+    ports:
+      - "5432:5432"
+
+  web:
+    restart: always
+    image: brnoschsaloli/nuvemprojeto:latest
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-projeto} 
+      POSTGRES_USER: ${POSTGRES_USER:-projeto}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-projeto}
+      SECRET_KEY: ${SECRET_KEY:-flamengo}
+      API_KEY: 127584e87c347080f9081e49dde5cafe
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db

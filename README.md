@@ -20,32 +20,33 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
 
 ### **Passo a Passo**
 
-1. **Clone o Repositório:**
-   ```bash
-   git clone https://github.com/brnoschsaloli/nuvemProjeto.git
-   cd nuvemProjeto
-   ```
+1. **Baixe o arquivo docker-compose.yaml:** 
 
-2. **Configurar Variáveis de Ambiente:**
-   - Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
-     ```env
-      SECRET_KEY="key secreta para o jwt"
-      ALGORITHM="algoritimo para hash de senhas do banco de dados"
-      POSTGRES_USER="user do postgres"
-      POSTGRES_PASSWORD="senha do postgres"
-      POSTGRES_DB="nome do banco de dados"
-      DATABASE_URL = "url do postgres"
-      API_KEY = "key para api do OpenWeatherMap"
-     ```
-    - Você deve criar uma conta no site da OpenWeatherMap e resgatar sua APIKEY gratuitamente
+    <div style="margin-top:15px;"></div>
+
+    - [docker-compose.yaml](compose/docker-compose.yaml)
+
+    <div style="margin-top:15px;"></div>
+
+2. **Certifique-se de que o Docker está rodando no seu computador**
+
+<div style="margin-top:15px;"></div>
 
 3. **Iniciar os Contêineres com Docker Compose:**
+
+<div style="margin-top:15px;"></div>
+
    ```bash
-   docker-compose up -d
+   docker compose up -d
    ```
 
+<div style="margin-top:15px;"></div>
+
 4. **Acessar a Aplicação:**
-   - A API estará disponível em `http://localhost:8000/docs`.
+
+    <div style="margin-top:15px;"></div>
+
+    - A API estará disponível em [http://localhost:8000/docs](http://localhost:8000/docs).
 
 ## 📚 Documentação dos Endpoints da API
 
@@ -106,20 +107,24 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
     ```
 
 ## 📸 Screenshots dos Endpoints Testados
-![Exemplo de Uso do Endpoint Consultar Clima](./screenshots/consulta_clima.png)
+![Exemplo de Uso do Endpoint Consultar Clima](./screenshots/registrar_usuario.png)
 
 *Descrição da screenshot: Mostrando a resposta do endpoint `/registrar/`.*
 
-![Exemplo de Uso do Endpoint Registrar Usuario](./screenshots/registrar_usuario.png)
+![Exemplo de Uso do Endpoint Registrar Usuario](./screenshots/login_usuario.png)
 
 *Descrição da screenshot: Mostrando a resposta do endpoint `/login/`.*
 
-![Exemplo de Uso do Endpoint Login Usuario](./screenshots/login_usuario.png)
+![Exemplo de Uso do Endpoint Login Usuario](./screenshots/consulta_clima.png)
 
 *Descrição da screenshot: Mostrando a resposta do endpoint `/consultar/` com a previsão do tempo.*
 
+
 ## 🎥 Vídeo de Execução da Aplicação
-[![Assista ao Vídeo](./screenshots/video_thumbnail.png)](https://youtu.be/seu_video_link)
+
+<a href="https://youtu.be/Z46RP-SC9Jo" style="display: block; border: 2px solid black; padding: 10px; width: fit-content; margin-bottom: 20px; ">
+    <img src="screenshots/video_thumbnail.png" alt="Exemplo de imagem" width="400" style="display: block; max-width: 100%; height: auto;">
+</a>
 
 *Descrição: Vídeo demonstrando a execução da aplicação e a interação com os endpoints da API.*
 
@@ -129,9 +134,3 @@ Este projeto é uma **API dockerizada** integrada com um banco de dados **Postgr
 *Descrição: Link para a imagem Docker do projeto no Docker Hub.*
 
 ---
-
-## 🛠 Tecnologias Utilizadas
-- **Linguagem:** Python
-- **Frameworks:** FastAPI, Docker
-- **Bibliotecas:** BeautifulSoup, Requests, JWT
-- **Banco de Dados:** PostgreSQL
